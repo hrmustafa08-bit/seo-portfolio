@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Web Developer &amp; UI Specialist - Mohammad Mustafa</title>
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+       ======================================================== -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <div class="brand-logo">M</div>
+        <div>
+          <div class="fw-bold brand-name text-dark">Mohammad Mustafa</div>
+          <small class="text-muted brand-title">Frontend Developer &amp; SEO Specialist</small>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-dark fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mx-auto mb-3 mb-lg-0 py-2 py-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          
+          <!-- SEO Expertise Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="seoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SEO Expertise
+            </a>
+            <ul class="dropdown-menu custom-dropdown-menu border shadow-sm" aria-labelledby="seoDropdown">
+              <li><a class="dropdown-item" href="ecommerce-seo.html">Ecommerce SEO</a></li>
+              <li><a class="dropdown-item" href="shopify-seo.html">Shopify SEO</a></li>
+              <li><a class="dropdown-item" href="ai-seo.html">AI SEO</a></li>
+              <li><a class="dropdown-item" href="organic-seo.html">Organic SEO</a></li>
+              <li><a class="dropdown-item" href="woocommerce-seo.html">Woocommerce SEO</a></li>
+              <li><a class="dropdown-item" href="aeo-geo-llmo.html">AEO, GEO &amp; LLMO</a></li>
+              <li><a class="dropdown-item" href="google-ads-ppc.html">Google Ads &amp; PPC</a></li>
+              <li><a class="dropdown-item" href="meta-ads-social.html">Meta Ads &amp; Social</a></li>
+              <li><a class="dropdown-item" href="email-marketing.html">Email Marketing</a></li>
+              <li><a class="dropdown-item" href="conversion-optimization.html">Conversion Optimization</a></li>
+              <li><a class="dropdown-item" href="research-insights.html">Research &amp; Insights</a></li>
+              <li><a class="dropdown-item" href="ai-marketing-automation.html">AI Marketing Automation</a></li>
+              <li><a class="dropdown-item" href="ai-agents.html">AI Agents</a></li>
+              <li><a class="dropdown-item" href="wordpress-web-apps.html">WordPress &amp; Web Apps</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="frontend-stack.html">Frontend Dev</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="d-lg-none my-2"></div>
+        <a href="#projectCallModal" data-bs-toggle="modal" class="btn-brand btn-nav-mini text-center">Hire Developer <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       SECTION 1: HERO SECTION
+       ======================================================== -->
+  <section class="hero-section py-4 py-lg-5">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <!-- Left Hero Content -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="d-inline-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="badge hero-tag-pill text-brand px-3 py-2 rounded-pill fw-bold">
+              <i class="bi bi-code-slash me-1"></i> Clean Code &bull; Mobile-First &bull; Core Web Vitals
+            </span>
+            <span class="badge hero-tag-pill-dark text-dark px-3 py-2 rounded-pill fw-bold border">
+              <i class="bi bi-lightning-charge-fill text-warning me-1"></i> Sub-Second Load Speeds
+            </span>
+          </div>
+
+          <h1 class="hero-title fw-extrabold mb-3 text-dark">
+            Modern, High-Speed <span class="text-brand">Frontend Web Development</span> Built For Real Conversions
+          </h1>
+
+          <p class="hero-desc mx-auto mx-lg-0 mb-4 text-muted">
+            I craft clean, semantic, and pixel-perfect web interfaces using <strong>Bootstrap 5, Tailwind CSS, JavaScript (ES6+), React.js, Shopify Liquid, and WordPress</strong>. Built from scratch with zero template bloat, passing Google's Core Web Vitals with 95+ PageSpeed scores.
+          </p>
+          
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4">
+            <a href="#projectCallModal" data-bs-toggle="modal" class="btn-brand text-center">Start a Project &rarr;</a>
+            <a href="#projects-showcase" class="btn-outline-custom text-center"><i class="bi bi-laptop me-1"></i> View Live Builds</a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="row g-3 pt-3 border-top text-center text-sm-start">
+            <div class="col-4">
+              <h3 class="fw-extrabold text-dark mb-0">11+ yrs</h3>
+              <small class="text-muted" style="font-size: 0.78rem;">frontend UI engineering</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-extrabold text-brand mb-0">95+</h3>
+              <small class="text-muted" style="font-size: 0.78rem;">Google PageSpeed average</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-extrabold text-dark mb-0">100%</h3>
+              <small class="text-muted" style="font-size: 0.78rem;">responsive &amp; accessible</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Profile Visual Card -->
+        <div class="col-lg-5">
+          <div class="hero-image-wrapper position-relative text-center mx-auto shadow-lg">
+            <img src="images/mustafa.jpeg" alt="Mohammad Mustafa - Frontend Developer" class="img-fluid hero-profile-img">
+            <div class="profile-name-badge text-start">
+              <h5 class="fw-bold mb-1 text-white">Mohammad Mustafa</h5>
+              <p class="mb-0 text-white-50 small">Senior Frontend UI &amp; Theme Specialist</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 2: DEV ADVANTAGE (Why Code-First Frontend Matters)
+       ======================================================== -->
+  <section class="py-5 bg-white border-top border-bottom">
+    <div class="container py-2 py-lg-4">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-7 text-center text-lg-start mb-3 mb-lg-0">
+          <span class="text-uppercase text-brand fw-bold d-block mb-1" style="font-size: 0.75rem; letter-spacing: 1.2px;">ENGINEERING PHILOSOPHY</span>
+          <h2 class="display-6 fw-extrabold text-dark mb-2">Why Hire a Developer Who Truly Understands Search &amp; UX?</h2>
+          <p class="text-muted mb-0">
+            Most frontend developers build for looks alone; traditional marketers don't know how to write clean code. I bridge both worlds so you get stunning design, blazing speed, and SEO-compliant architecture out of the box.
+          </p>
+        </div>
+        <div class="col-lg-5 text-center text-lg-end">
+          <div class="d-inline-flex gap-2 flex-wrap justify-content-center justify-content-lg-end">
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-shield-check text-success"></i> W3C Validated HTML5</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-speedometer2 text-primary"></i> Zero Layout Shift (CLS: 0.00)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Advantage 1 -->
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded-4 border bg-light-subtle h-100 shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-primary mb-3">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Zero Bloat, Pure Speed</h5>
+              <p class="text-muted small mb-0 lh-base">
+                No sluggish drag-and-drop page builders that inject thousands of useless wrapper tags. Handcrafted markup, optimized DOM trees, and tiny CSS/JS payloads.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded-4 border bg-light-subtle h-100 shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-danger mb-3">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Pixel-Perfect Responsive</h5>
+              <p class="text-muted small mb-0 lh-base">
+                Fluid viewport adaptations across modern smartphones, tablets, laptops, and ultra-wide desktop monitors without awkward content overflow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded-4 border bg-light-subtle h-100 shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-success mb-3">
+                <i class="bi bi-search"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Search &amp; AI Machine-Ready</h5>
+              <p class="text-muted small mb-0 lh-base">
+                Strict semantic headings (`<h1>` to `<h6>`), full ARIA accessibility, pre-formatted OpenGraph meta, and connected JSON-LD schema graphs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3: COMPLETE FRONTEND TECH STACK (8 Cards)
+       ======================================================== -->
+  <section class="py-5 bg-white" id="frontend-stack">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center text-lg-start mb-5">
+        <span class="text-uppercase text-brand fw-bold d-block mb-1" style="font-size: 0.75rem; letter-spacing: 1.2px;">TECH STACK</span>
+        <h2 class="display-6 fw-extrabold text-dark mb-2">Frontend Engineering Capabilities</h2>
+        <p class="text-muted small" style="max-width: 680px;">
+          Proven tools and technologies I use to build scalable, maintainable, and high-converting web applications.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Bootstrap 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-bootstrap fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Bootstrap 5</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Responsive Grid &amp; Utilities</small>
+            <p class="text-muted small mb-0">
+              Clean mobile-first layouts, modern grid structures, custom component overrides, and zero dependency on jQuery.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Tailwind CSS -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-info bg-info-subtle mb-3">
+              <i class="bi bi-wind fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Tailwind CSS</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Utility-First Architecture</small>
+            <p class="text-muted small mb-0">
+              JIT-compiled atomic styling that guarantees tiny production bundle sizes and blazing fast First Contentful Paint.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Shopify & Liquid -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-success bg-success-subtle mb-3">
+              <i class="bi bi-bag-check fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Shopify Liquid</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Custom Theme Development</small>
+            <p class="text-muted small mb-0">
+              Custom Liquid sections, dynamic collection filters, JSON templates, schema injection, and app snippet purging.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. WordPress & WooCommerce -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-wordpress fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">WordPress / Woo</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Custom Themes &amp; Blocks</small>
+            <p class="text-muted small mb-0">
+              Custom PHP templates, lightweight Gutenberg blocks, custom post types, and WooCommerce product archive styling.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. JavaScript (ES6+) -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-warning bg-warning-subtle mb-3">
+              <i class="bi bi-filetype-js fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">JavaScript (ES6+)</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Modern DOM &amp; Fetch API</small>
+            <p class="text-muted small mb-0">
+              Asynchronous data handling, clean DOM manipulation, intersection observers, and scripts tuned to eliminate TBT.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. React.js -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-info bg-info-subtle mb-3">
+              <i class="bi bi-code-square fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">React.js &amp; Vite</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Component-Driven SPAs</small>
+            <p class="text-muted small mb-0">
+              Modular UI state management, reusable component libraries, React Router integration, and instant Vite HMR builds.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. HTML5 & Semantic Web -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-danger bg-danger-subtle mb-3">
+              <i class="bi bi-filetype-html fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">HTML5 &amp; Schema</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Structured Machine Markup</small>
+            <p class="text-muted small mb-0">
+              Valid heading hierarchies, accessible markup (ARIA), microdata annotations, and machine-readable data structures.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. CSS3 & Performance -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-filetype-css fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Modern CSS3</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Flexbox, Grid &amp; Animations</small>
+            <p class="text-muted small mb-0">
+              GPU-accelerated animations, CSS custom properties, zero layout shift (CLS), and print/mobile media queries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4: WHAT I BUILD (6 Pastel Service Cards)
+       ======================================================== -->
+  <section class="py-5 bg-light-subtle border-top border-bottom">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center text-lg-start mb-5">
+        <span class="text-uppercase text-brand fw-bold d-block mb-1" style="font-size: 0.75rem; letter-spacing: 1.2px;">SOLUTIONS &amp; DELIVERABLES</span>
+        <h2 class="display-6 fw-extrabold text-dark mb-2">Frontend Solutions I Design &amp; Build</h2>
+        <p class="text-muted small" style="max-width: 680px;">
+          Whether building from scratch or overhauling an existing storefront, I deliver high-performing web experiences tailored to your business goals.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Custom Ecommerce Frontends -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-blue p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-primary mb-3">
+                <i class="bi bi-cart3"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Custom Ecommerce Frontends</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                High-converting product detail pages (PDPs), streamlined cart drawers, instant live search, and friction-free mobile checkout funnels for Shopify &amp; WooCommerce.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Landing Pages & CRO Layouts -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-rose p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-danger mb-3">
+                <i class="bi bi-cursor-fill"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">High-Conversion Landing Pages</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                Single-page and multi-step marketing funnels engineered for high click-through rates, clear visual hierarchy, and instant mobile responsiveness.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Web Speed & Core Web Vitals -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-yellow p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-warning mb-3">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Core Web Vitals Optimization</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                Eliminating render-blocking CSS/JS, reducing Largest Contentful Paint (LCP), preventing Cumulative Layout Shift (CLS), and passing Google PageSpeed audits.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Figma / Adobe XD to HTML -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-mint p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-success mb-3">
+                <i class="bi bi-file-earmark-code"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Figma / PSD to Code</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                Translating UI/UX mockups into clean, hand-written HTML5, CSS3/Bootstrap, and JavaScript with exact typography, color accuracy, and interactive micro-animations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Single Page React Apps -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-blue p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-info mb-3">
+                <i class="bi bi-layers-fill"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">React Web Apps &amp; Dashboards</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                Building interactive, state-driven user interfaces, admin analytics dashboards, and client portals with reusable components and REST API integration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Theme Maintenance & Code Audits -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-pastel-card service-pastel-rose p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-danger mb-3">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Code Cleanup &amp; Refactoring</h5>
+              <p class="text-secondary small mb-0 lh-base">
+                Removing obsolete app tracking scripts, optimizing bloated stylesheet frameworks, eliminating CSS redundancies, and resolving cross-browser display bugs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5: FEATURED PROJECTS / SHOWCASE
+       ======================================================== -->
+  <section class="py-5 bg-white" id="projects-showcase">
+    <div class="container py-2 py-lg-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+        <div>
+          <span class="text-uppercase text-brand fw-bold d-block mb-1" style="font-size: 0.75rem; letter-spacing: 1.2px;">PORTFOLIO SHOWCASE</span>
+          <h2 class="display-6 fw-extrabold text-dark mb-0">Featured Frontend Builds</h2>
+        </div>
+        <a href="#projectCallModal" data-bs-toggle="modal" class="text-brand fw-bold text-decoration-none small mt-3 mt-md-0">Discuss Your Project &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-12 col-md-4">
+          <div class="case-study-hero-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="p-4" style="background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-white text-dark border small fw-semibold">E-Commerce UI</span>
+                <span class="badge bg-success text-white small">99 PageSpeed</span>
+              </div>
+              <h5 class="fw-extrabold text-dark mb-0">Luxury E-Commerce Storefront</h5>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="fw-bold text-dark mb-2">Liquid &bull; Bootstrap 5 &bull; Schema JSON-LD</h6>
+                <p class="text-muted small mb-4">
+                  Bespoke storefront build featuring modular product filters, custom swatch selectors, and zero render-blocking third-party scripts.
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                <span class="small text-muted fw-semibold">100% Mobile Ready</span>
+                <a href="#projectCallModal" data-bs-toggle="modal" class="text-brand fw-bold text-decoration-none small">Case details &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-12 col-md-4">
+          <div class="case-study-hero-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="p-4" style="background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-white text-dark border small fw-semibold">React.js Web App</span>
+                <span class="badge bg-primary text-white small">SPA &bull; Vite</span>
+              </div>
+              <h5 class="fw-extrabold text-dark mb-0">Tour &amp; Travel Booking Platform</h5>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="fw-bold text-dark mb-2">React &bull; React Router &bull; React-Bootstrap</h6>
+                <p class="text-muted small mb-4">
+                  Multi-page client travel portal with responsive destination packages, inquiry booking modals, and fluid state management.
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                <span class="small text-muted fw-semibold">Component Driven</span>
+                <a href="#projectCallModal" data-bs-toggle="modal" class="text-brand fw-bold text-decoration-none small">Case details &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-12 col-md-4">
+          <div class="case-study-hero-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="p-4" style="background: linear-gradient(135deg, #fefce8 0%, #fef2f2 100%);">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-white text-dark border small fw-semibold">High-Traffic Portal</span>
+                <span class="badge bg-warning text-dark small">Core Vitals Pass</span>
+              </div>
+              <h5 class="fw-extrabold text-dark mb-0">WordPress Editorial &amp; Lead Portal</h5>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="fw-bold text-dark mb-2">Custom PHP &bull; Tailwind CSS &bull; REST API</h6>
+                <p class="text-muted small mb-4">
+                  High-speed publishing theme with custom Gutenberg blocks, dynamic newsletter capture, and sub-second page rendering.
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                <span class="small text-muted fw-semibold">Zero Plugin Bloat</span>
+                <a href="#projectCallModal" data-bs-toggle="modal" class="text-brand fw-bold text-decoration-none small">Case details &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 6: DEVELOPMENT PROCESS (4 Steps)
+       ======================================================== -->
+  <section class="py-5 bg-light-subtle border-top border-bottom">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center mb-5">
+        <span class="text-uppercase text-brand fw-bold d-block mb-1" style="font-size: 0.75rem; letter-spacing: 1.2px;">DEVELOPMENT WORKFLOW</span>
+        <h2 class="display-6 fw-extrabold text-dark mb-2">How I Turn Requirements Into Clean Code</h2>
+        <p class="text-muted small mx-auto" style="max-width: 600px;">
+          A transparent, step-by-step process with regular milestone updates and zero surprises.
+        </p>
+      </div>
+
+      <div class="d-flex flex-column gap-4 max-w-850 mx-auto">
+        <!-- Step 1 -->
+        <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm process-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="process-badge badge-blue">01</span>
+            <div>
+              <span class="text-muted fw-bold d-block" style="font-size: 0.75rem;">STEP 01 &bull; PLANNING</span>
+              <h5 class="fw-bold text-dark mb-0">Wireframing, UX Architecture &amp; Tech Stack</h5>
+            </div>
+          </div>
+          <p class="text-secondary small mb-0 lh-lg">
+            We evaluate your design assets (Figma, XD, or existing pages), user flows, target devices, and conversion goals. I establish the exact stylesheet hierarchy, component architecture, and performance budget before writing a line of code.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm process-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="process-badge badge-rose">02</span>
+            <div>
+              <span class="text-muted fw-bold d-block" style="font-size: 0.75rem;">STEP 02 &bull; DEVELOPMENT</span>
+              <h5 class="fw-bold text-dark mb-0">Semantic HTML5, CSS3 / Bootstrap &amp; JavaScript</h5>
+            </div>
+          </div>
+          <p class="text-secondary small mb-0 lh-lg">
+            Writing modular, hand-crafted code with complete attention to responsiveness. Responsive grids, interactive elements (modals, dropdowns, sticky headers, sliders), and accessible markup engineered to strict W3C standards.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm process-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="process-badge badge-yellow">03</span>
+            <div>
+              <span class="text-muted fw-bold d-block" style="font-size: 0.75rem;">STEP 03 &bull; OPTIMIZATION</span>
+              <h5 class="fw-bold text-dark mb-0">Performance Auditing &amp; Core Web Vitals Tuning</h5>
+            </div>
+          </div>
+          <p class="text-secondary small mb-0 lh-lg">
+            Rigorous cross-browser and cross-device testing (Chrome, Safari, Firefox, Edge, iOS &amp; Android). Optimizing images to next-gen WebP/AVIF formats, deferring non-critical scripts, and guaranteeing zero Cumulative Layout Shift (CLS).
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm process-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="process-badge badge-green">04</span>
+            <div>
+              <span class="text-muted fw-bold d-block" style="font-size: 0.75rem;">STEP 04 &bull; DEPLOYMENT</span>
+              <h5 class="fw-bold text-dark mb-0">Clean Handover, Version Control &amp; Launch</h5>
+            </div>
+          </div>
+          <p class="text-secondary small mb-0 lh-lg">
+            Seamless deployment via Git or direct server integration. You receive structured, well-documented source code that any developer can easily read, maintain, and expand in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 7: FREQUENTLY ASKED QUESTIONS (Accordion)
+       ======================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">FAQ</span>
+        <h2 class="display-6 fw-extrabold text-dark mb-2">Frequently Asked Questions</h2>
+        <p class="text-muted small">Everything you need to know about working with me on frontend development projects.</p>
+      </div>
+
+      <div class="accordion custom-faq-accordion max-w-850 mx-auto" id="devFaqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item border-0 border-bottom py-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button fw-bold text-dark bg-transparent px-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#df1">
+              Do you code custom designs or rely on pre-made templates?
+            </button>
+          </h2>
+          <div id="df1" class="accordion-collapse collapse show" data-bs-parent="#devFaqAccordion">
+            <div class="accordion-body px-0 text-muted small">
+              I build custom, handcrafted frontends from scratch using clean HTML5, CSS3, Bootstrap 5, Tailwind CSS, or React. While I can customize existing themes (Shopify/WordPress), I strip out unnecessary bloated scripts and page builder overhead so your store loads instantly.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item border-0 border-bottom py-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-dark bg-transparent px-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#df2">
+              How do you guarantee good Core Web Vitals scores?
+            </button>
+          </h2>
+          <div id="df2" class="accordion-collapse collapse" data-bs-parent="#devFaqAccordion">
+            <div class="accordion-body px-0 text-muted small">
+              By keeping CSS modular, loading fonts with `font-display: swap`, properly sizing responsive image containers to prevent layout shift (CLS), and deferring or asynchronous loading of non-critical JavaScript to eliminate main-thread blocking time (TBT/INP).
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item border-0 border-bottom py-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-dark bg-transparent px-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#df3">
+              Can you convert a Figma, Adobe XD, or Sketch file into live code?
+            </button>
+          </h2>
+          <div id="df3" class="accordion-collapse collapse" data-bs-parent="#devFaqAccordion">
+            <div class="accordion-body px-0 text-muted small">
+              Yes, absolutely. I specialize in pixel-perfect translation of design files into clean, responsive web code, ensuring typography, spacing, breakpoints, and interactive micro-states match your visual direction exactly.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item border-0 border-bottom py-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-dark bg-transparent px-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#df4">
+              Can you edit Shopify Liquid or WordPress theme files directly?
+            </button>
+          </h2>
+          <div id="df4" class="accordion-collapse collapse" data-bs-parent="#devFaqAccordion">
+            <div class="accordion-body px-0 text-muted small">
+              Yes. I have extensive experience working inside Shopify's Liquid architecture (creating custom sections, blocks, and schema files) and WordPress/WooCommerce templates (PHP hooks, functions.php, custom post types).
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item border-0 border-bottom py-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-dark bg-transparent px-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#df5">
+              How do we get started on a project?
+            </button>
+          </h2>
+          <div id="df5" class="accordion-collapse collapse" data-bs-parent="#devFaqAccordion">
+            <div class="accordion-body px-0 text-muted small">
+              Simply click the "Hire Developer" or "Start a Project" button to submit your project requirements. We can connect for a quick 20-minute call to review your scope, after which I provide a clear milestone roadmap and timeline.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 8: CURVED ROYAL BLUE CALL TO ACTION BANNER
+       ======================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="curved-banner-container position-relative overflow-hidden p-4 p-md-5 text-center text-white rounded-5 shadow-lg">
+        <div class="banner-circle-yellow"></div>
+        <div class="banner-circle-green"></div>
+
+        <div class="position-relative" style="z-index: 2;">
+          <span class="text-uppercase fw-bold text-white-50 small mb-2 d-block" style="letter-spacing: 1px;">&bull; LET'S BUILD SOMETHING FAST &bull;</span>
+          <h2 class="display-5 fw-extrabold mb-3">Need clean code, blazing speed, and pixel perfection?</h2>
+          <p class="mx-auto mb-4 text-white-50" style="max-width: 650px; font-size: 1.05rem;">
+            Whether you need a full storefront built, a landing page designed, or theme speed optimized for Core Web Vitals, I’m ready to help.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+            <a href="#projectCallModal" class="btn btn-white-pill fw-bold" data-bs-toggle="modal">
+              Book a Project Call
+            </a>
+            <a href="mailto:hrmustafa08@gmail.com" class="btn btn-banner-outline fw-semibold">
+              Email hrmustafa08@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       MEGA FOOTER (Consistent with Website)
+       ======================================================== -->
+  <footer class="footer-dark py-5 text-white" style="background-color: #171717;">
+    <div class="container py-3">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-inline-flex align-items-center gap-2 bg-white text-dark px-3 py-2 rounded-3 fw-bold mb-3 shadow-sm">
+            <span class="text-primary fw-extrabold" style="font-size: 1.1rem;">Mohammad Mustafa</span>
+            <span class="d-inline-flex gap-1">
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+            </span>
+          </div>
+          <p class="text-secondary small mb-4 fw-semibold">
+            Frontend Web Developer &amp; Technical SEO Specialist with 11+ Years of Industry Experience.
+          </p>
+          <a href="#projectCallModal" data-bs-toggle="modal" class="btn btn-outline-secondary text-white rounded-pill px-3 py-2 small fw-semibold">
+            Hire Developer &rarr;
+          </a>
+        </div>
+
+        <!-- Col 2: Frontend Services -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">FRONTEND CAPABILITIES</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="#frontend-stack" class="footer-link">Bootstrap 5 &amp; Tailwind CSS</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Shopify Liquid &amp; Theme Builds</a></li>
+            <li><a href="#frontend-stack" class="footer-link">WordPress &amp; WooCommerce Themes</a></li>
+            <li><a href="#frontend-stack" class="footer-link">JavaScript (ES6+) &amp; React.js</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Core Web Vitals &amp; Speed Audits</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: SEO Capabilities -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">SEO &amp; MARKETING</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="organic-seo.html" class="footer-link">Organic &amp; Technical SEO</a></li>
+            <li><a href="aeo-geo-llmo.html" class="footer-link">AEO, GEO &amp; LLMO Optimization</a></li>
+            <li><a href="shopify-seo.html" class="footer-link">Shopify SEO Specialist</a></li>
+            <li><a href="woocommerce-seo.html" class="footer-link">WooCommerce SEO Consultant</a></li>
+            <li><a href="conversion-optimization.html" class="footer-link">Conversion Rate Optimization (CRO)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Links -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">QUICK NAVIGATION</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Insights</a></li>
+            <li><a href="dashboard.html" class="footer-link">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-4 mt-5 border-top border-secondary border-opacity-25 d-flex flex-column flex-md-row justify-content-between align-items-center small text-secondary">
+        <div>&copy; 2026 Mohammad Mustafa. All rights reserved.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODAL: PROJECT INQUIRY / CALL
+       ======================================================== -->
+  <div class="modal fade" id="projectCallModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 p-3">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalLabel">Start a Frontend Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small">Share your project vision, target platform (Shopify, WordPress, Custom React/HTML), or speed requirements.</p>
+          <form class="d-flex flex-column gap-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Work Email" required>
+            <input type="url" class="form-control" placeholder="Existing Website / Design Link (Figma/URL)">
+            <textarea class="form-control" rows="3" placeholder="Tell me about what you want to build or optimize..."></textarea>
+            <button type="submit" class="btn-brand w-100">Submit Project Details &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
