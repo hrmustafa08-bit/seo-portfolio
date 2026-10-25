@@ -13,77 +13,94 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="index.html">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <div class="brand-logo">M</div>
         <div>
-          <div class="fw-bold" style="font-size: 1rem; line-height: 1;">Mohammad Mustafa</div>
-          <small class="text-secondary" style="font-size: 0.7rem;">SEO Specialist & Frontend Developer</small>
+          <div class="fw-bold brand-name text-dark">Mohammad Mustafa</div>
+          <small class="text-muted brand-title">SEO Specialist &amp; Frontend Developer</small>
         </div>
       </a>
-      <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-        <i class="bi bi-list text-white fs-2"></i>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-dark fs-2"></i>
       </button>
       <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <ul class="navbar-nav mx-auto mb-3 mb-lg-0 py-2 py-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="seo-expertise.html">SEO Expertise</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="image-portfolio.html">Image Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          
+          <!-- SEO Expertise Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="seoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SEO Expertise
+            </a>
+            <ul class="dropdown-menu custom-dropdown-menu border shadow-sm" aria-labelledby="seoDropdown">
+              <li><a class="dropdown-item" href="organic-seo.html">Organic SEO</a></li>
+              <li><a class="dropdown-item" href="aeo-geo-llmo.html">AEO, GEO &amp; LLMO</a></li>
+              <li><a class="dropdown-item" href="google-ads-ppc.html">Google Ads &amp; PPC</a></li>
+              <li><a class="dropdown-item" href="meta-ads-social.html">Meta Ads &amp; Social</a></li>
+              <li><a class="dropdown-item" href="email-marketing.html">Email Marketing</a></li>
+              <li><a class="dropdown-item" href="conversion-optimization.html">Conversion Optimization</a></li>
+              <li><a class="dropdown-item" href="research-insights.html">Research &amp; Insights</a></li>
+              <li><a class="dropdown-item" href="ai-marketing-automation.html">AI Marketing Automation</a></li>
+              <li><a class="dropdown-item" href="ai-agents.html">AI Agents</a></li>
+              <li><a class="dropdown-item" href="wordpress-web-apps.html">WordPress &amp; Web Apps</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#frontend-stack">Frontend Dev</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a href="contact.html" class="btn-teal">Let's Talk <i class="bi bi-arrow-right"></i></a>
+        <div class="d-lg-none my-2"></div>
+        <!-- Compact Mini Button -->
+        <a href="#strategyCallModal" data-bs-toggle="modal" class="btn-brand btn-nav-mini text-center">Book a Call <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
+  <!-- ========================================================
+       SECTION 1: HERO SECTION (SEO + FRONTEND DUAL PROFILE)
+       ======================================================== -->
+  <section class="hero-section py-4 py-lg-5">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <span class="badge-role">SEO Specialist | Frontend Developer</span>
-          <h1 class="hero-title">SEO-Driven Growth.<br>Future-Ready Websites.</h1>
-          <p class="hero-desc">
-            I combine SEO, GEO, E-E-A-T, Entity SEO and technical SEO with frontend development to build websites designed for search visibility, AI discovery, performance and user experience.
-          </p>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="projects.html" class="btn-teal">View My Work <i class="bi bi-arrow-right"></i></a>
-            <a href="#" class="btn-outline-custom"><i class="bi bi-download"></i> Download Resume</a>
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          
+          <div class="d-inline-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="badge hero-tag-pill text-brand px-3 py-2 rounded-pill fw-bold">
+              <i class="bi bi-search me-1"></i> SEO &bull; AEO &bull; GEO &bull; LLMO
+            </span>
+            <span class="badge hero-tag-pill-dark text-dark px-3 py-2 rounded-pill fw-bold border">
+              <i class="bi bi-code-slash text-brand me-1"></i> Frontend Developer
+            </span>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat-item"><i class="bi bi-graph-up text-teal"></i> SEO Focused Growth</div>
-            <div class="hero-stat-item"><i class="bi bi-cpu text-teal"></i> AI & GEO Ready</div>
-            <div class="hero-stat-item"><i class="bi bi-code-slash text-teal"></i> Clean & Fast Code</div>
-            <div class="hero-stat-item"><i class="bi bi-person text-teal"></i> User-Centric Design</div>
+
+          <h1 class="hero-title fw-extrabold mb-3 text-dark">
+            <span class="text-brand">SEO Specialist</span> &amp; <span class="text-brand">Frontend Web Developer</span> with 11+ Years of Proven Impact
+          </h1>
+          <p class="hero-desc mx-auto mx-lg-0 mb-4 text-muted">
+            I bridge the gap between search algorithms and clean code. From driving international traffic and AI discovery (GEO/AEO) to hand-crafting pixel-perfect, responsive stores and apps using <strong>Bootstrap 5, Tailwind CSS, Shopify, WordPress, and JavaScript</strong>.
+          </p>
+          
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4">
+            <a href="#case-studies-section" class="btn-brand text-center">See SEO &amp; Dev Results &rarr;</a>
+            <a href="#frontend-stack" class="btn-outline-custom text-center"><i class="bi bi-code-square me-1"></i> Explore Frontend Stack</a>
+          </div>
+
+          <div class="d-flex justify-content-center justify-content-lg-start gap-2 pt-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-pill fw-bold text-dark font-monospace" style="font-size: 0.85rem;" aria-label="Upwork">Up</a>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="laptop-preview-container">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=700&q=80" alt="Workspace Mockup" class="laptop-mockup img-fluid">
-            <!-- Floating Chips -->
-            <div class="hero-floating-chip chip-sio">
-              <i class="bi bi-search text-teal"></i>
-              <div><small class="fw-bold d-block">SEO</small><span style="font-size:0.7rem; color:#94a3b8;">Search Intent Optimization</span></div>
-            </div>
-            <div class="hero-floating-chip chip-geo">
-              <i class="bi bi-stars text-primary"></i>
-              <div><small class="fw-bold d-block">GEO</small><span style="font-size:0.7rem; color:#94a3b8;">Generative Engine Optimization</span></div>
-            </div>
-            <div class="hero-floating-chip chip-eeat">
-              <i class="bi bi-shield-check text-info"></i>
-              <div><small class="fw-bold d-block">E-E-A-T</small><span style="font-size:0.7rem; color:#94a3b8;">Authority & Trust</span></div>
-            </div>
-            <div class="hero-floating-chip chip-entity">
-              <i class="bi bi-diagram-3 text-warning"></i>
-              <div><small class="fw-bold d-block">Entity SEO</small><span style="font-size:0.7rem; color:#94a3b8;">Knowledge Graph</span></div>
-            </div>
-            <div class="hero-floating-chip chip-traffic">
-              <i class="bi bi-graph-up-arrow text-teal fs-4"></i>
-              <div><small style="font-size: 0.7rem; color: #94a3b8;">Organic Traffic</small><div class="fw-bold text-teal fs-5">+248%</div></div>
+        <div class="col-lg-5">
+          <div class="hero-image-wrapper position-relative text-center mx-auto">
+            <img src="images/mustafa.jpeg" alt="Mohammad Mustafa" class="img-fluid hero-profile-img">
+            <div class="profile-name-badge text-start">
+              <h5 class="fw-bold mb-1 text-white">Mohammad Mustafa</h5>
+              <p class="mb-0 text-white-50 small">SEO Specialist &amp; Frontend Developer</p>
             </div>
           </div>
         </div>
@@ -91,692 +108,731 @@
     </div>
   </section>
 
-  <!-- SEO Expertise Section -->
-  <section class="py-5 bg-white">
-    <div class="container py-4">
+  <!-- ========================================================
+       SECTION 2: FRONTEND DEVELOPER TECH STACK SHOWCASE
+       ======================================================== -->
+  <section class="py-5 bg-white border-top" id="frontend-stack">
+    <div class="container py-2 py-lg-4">
       <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-          <span class="section-tag">SEO EXPERTISE</span>
-          <h2 class="fw-bold">Advanced SEO Strategies<br>for Long-Term Success</h2>
+        <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+          <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">FRONTEND ENGINEERING</span>
+          <h2 class="display-6 fw-extrabold text-dark mb-2">High-Performance Code Meets Search Optimization</h2>
+          <p class="text-muted mb-0">
+            Most SEOs can only audit errors; because I code from scratch, I eliminate Core Web Vitals issues, optimize DOM performance, and construct bespoke layouts directly.
+          </p>
         </div>
-        <div class="col-lg-6">
-          <p class="text-muted mb-3">I focus on modern SEO practices that go beyond keywords — combining AEO, GEO, E-E-A-T, and Entity SEO to help websites rank, get discovered, and build lasting authority.</p>
-          <a href="seo-expertise.html" class="text-teal text-decoration-none fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+        <div class="col-lg-6 text-center text-lg-end">
+          <div class="d-inline-flex gap-2 flex-wrap justify-content-center justify-content-lg-end">
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-lightning-charge text-warning"></i> 95+ PageSpeed Scores</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-phone text-primary"></i> 100% Mobile Responsive</span>
+          </div>
         </div>
       </div>
 
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-card">
-            <div class="icon-box bg-light text-teal"><i class="bi bi-search"></i></div>
-            <h5 class="fw-bold mb-2">AEO</h5>
-            <small class="text-muted d-block mb-3">Answer Engine Optimization</small>
-            <ul class="list-unstyled text-muted small mb-0 d-flex flex-column gap-2">
-              <li><i class="bi bi-check text-teal"></i> Direct answer optimization</li>
-              <li><i class="bi bi-check text-teal"></i> Featured snippets & voice search</li>
-              <li><i class="bi bi-check text-teal"></i> Conversational query mapping</li>
-            </ul>
+        <!-- Bootstrap 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-bootstrap fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Bootstrap 5</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Modern Grid &amp; Utilities</small>
+            <p class="text-muted small mb-0">
+              Clean mobile-first layouts, responsive breakpoint systems, and custom theme overrides without bloat.
+            </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-card">
-            <div class="icon-box bg-light text-primary"><i class="bi bi-stars"></i></div>
-            <h5 class="fw-bold mb-2">GEO</h5>
-            <small class="text-muted d-block mb-3">Generative Engine Optimization</small>
-            <ul class="list-unstyled text-muted small mb-0 d-flex flex-column gap-2">
-              <li><i class="bi bi-check text-teal"></i> Optimize for AI search</li>
-              <li><i class="bi bi-check text-teal"></i> Structure data for LLMs</li>
-              <li><i class="bi bi-check text-teal"></i> Be the source, not just a link</li>
-            </ul>
+
+        <!-- Tailwind CSS -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-info bg-info-subtle mb-3">
+              <i class="bi bi-wind fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Tailwind CSS</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Utility-First UI Architecture</small>
+            <p class="text-muted small mb-0">
+              JIT-compiled, atomic CSS builds delivering tiny stylesheet payloads for optimal First Contentful Paint.
+            </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-card">
-            <div class="icon-box bg-light text-info"><i class="bi bi-shield-check"></i></div>
-            <h5 class="fw-bold mb-2">E-E-A-T</h5>
-            <small class="text-muted d-block mb-3">Experience & Authority</small>
-            <ul class="list-unstyled text-muted small mb-0 d-flex flex-column gap-2">
-              <li><i class="bi bi-check text-teal"></i> Show real experience</li>
-              <li><i class="bi bi-check text-teal"></i> Build topical authority</li>
-              <li><i class="bi bi-check text-teal"></i> Gain trust with quality content</li>
-            </ul>
+
+        <!-- Shopify & Liquid -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-success bg-success-subtle mb-3">
+              <i class="bi bi-bag-check fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">Shopify &amp; Liquid</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Theme Architecture &amp; CRO</small>
+            <p class="text-muted small mb-0">
+              Custom Liquid sections, schema injection, collection filtering, and speed-optimized storefronts.
+            </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-card">
-            <div class="icon-box bg-light text-warning"><i class="bi bi-diagram-3"></i></div>
-            <h5 class="fw-bold mb-2">Entity SEO</h5>
-            <small class="text-muted d-block mb-3">Build Brand & Topic Entities</small>
-            <ul class="list-unstyled text-muted small mb-0 d-flex flex-column gap-2">
-              <li><i class="bi bi-check text-teal"></i> Optimize for entities</li>
-              <li><i class="bi bi-check text-teal"></i> Knowledge graph presence</li>
-              <li><i class="bi bi-check text-teal"></i> Stronger semantic relevance</li>
-            </ul>
+
+        <!-- WordPress & WooCommerce -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-wordpress fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">WordPress</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Fast Custom Themes</small>
+            <p class="text-muted small mb-0">
+              Lightweight block-based page building, custom post types, and headless-ready architectures.
+            </p>
+          </div>
+        </div>
+
+        <!-- JavaScript (ES6+) -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-warning bg-warning-subtle mb-3">
+              <i class="bi bi-filetype-js fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">JavaScript (ES6+)</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Clean Interactivity</small>
+            <p class="text-muted small mb-0">
+              Async scripts, dynamic API hydration, and DOM updates engineered to prevent Total Blocking Time (TBT).
+            </p>
+          </div>
+        </div>
+
+        <!-- HTML5 & Semantic Web -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-danger bg-danger-subtle mb-3">
+              <i class="bi bi-filetype-html fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">HTML5 &amp; JSON-LD</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Semantic Structure</small>
+            <p class="text-muted small mb-0">
+              Valid heading hierarchies, accessible markup (ARIA), and microdata graphs tailored for LLMs and Googlebot.
+            </p>
+          </div>
+        </div>
+
+        <!-- Modern CSS3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="bi bi-filetype-css fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">CSS3 &amp; Animations</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Flexbox, Grid &amp; Variables</small>
+            <p class="text-muted small mb-0">
+              Hardware-accelerated transforms, zero layout shift (CLS), CSS custom variables, and responsive viewports.
+            </p>
+          </div>
+        </div>
+
+        <!-- React.js & Modern Tools -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="frontend-tech-card p-4 rounded-4 border bg-white h-100 shadow-sm">
+            <div class="tech-icon-box text-info bg-info-subtle mb-3">
+              <i class="bi bi-code-square fs-4"></i>
+            </div>
+            <h5 class="fw-bold text-dark mb-1">React.js &amp; Git</h5>
+            <small class="text-brand fw-semibold d-block mb-2">Component-Driven Builds</small>
+            <p class="text-muted small mb-0">
+              Reusable UI modules, Git version control, CI/CD deployments, and fast Vite-powered frontend applications.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Strip (Dark) -->
-  <section class="about-strip">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-2 text-center text-lg-start">
-          <img src="images/mustafa.jpeg" alt="Mohammad Mustafa" class="avatar-img">
-        </div>
+  <!-- ========================================================
+       SECTION 3: ABOUT & REVENUE WIDGET
+       ======================================================== -->
+  <section class="py-5 bg-light-subtle border-top">
+    <div class="container py-2 py-lg-4">
+      <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-5">
-          <span class="section-tag">ABOUT ME</span>
-          <h4 class="fw-bold mb-3">I'm Mohammad Mustafa</h4>
-          <p class="text-secondary small mb-4">
-            Senior SEO & Growth Specialist with strong Frontend Development skills. I drive organic visibility and conversions through Technical SEO, GEO/AEO, Entity Optimization, and E-E-A-T, supported by targeted Google & Meta Ads. Combining this with hands-on expertise in Bootstrap 5, WordPress, and Shopify, plus marketplace optimization on Amazon & Flipkart, I build and rank digital assets that scale businesses.
+          <div class="revenue-card p-4 rounded-4 shadow-sm border bg-white mx-auto">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill">ORGANIC REVENUE</span>
+              <small class="text-muted fw-semibold">Last 12 months</small>
+            </div>
+            
+            <h2 class="display-5 fw-extrabold text-brand mb-1">$1,203,091</h2>
+            <p class="text-muted small mb-4">Collection-page revenue for one ecommerce client</p>
+
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div>
+                <div class="d-flex justify-content-between small fw-bold mb-1">
+                  <span class="text-dark">/collections/moissanite-chains</span>
+                  <span class="text-dark">$409,545</span>
+                </div>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-brand" role="progressbar" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between small fw-bold mb-1">
+                  <span class="text-dark">/collections/best-deals</span>
+                  <span class="text-dark">$108,423</span>
+                </div>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-brand" role="progressbar" style="width: 50%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between small fw-bold mb-1">
+                  <span class="text-dark">/collections/moissanite-bracelets</span>
+                  <span class="text-dark">$100,213</span>
+                </div>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-brand" role="progressbar" style="width: 45%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between small fw-bold mb-1">
+                  <span class="text-dark">/collections/moissanite-watches</span>
+                  <span class="text-dark">$47,424</span>
+                </div>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-brand" role="progressbar" style="width: 28%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top small text-muted">
+              <div><strong>780,768</strong> active users &bull; <strong>1,723</strong> purchases</div>
+              <span class="badge bg-light text-secondary border">GA4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">ABOUT ME</span>
+          <h2 class="display-6 fw-extrabold text-dark mb-4">
+            An SEO consultant &amp; developer who treats your rankings and code like revenue.
+          </h2>
+          <p class="text-muted mb-3">
+            I’m Mohammad Mustafa, bringing 11+ years of dual expertise across advanced SEO strategy and frontend software design. I specialize in international SEO (hreflang, multi-market expansion, and content localization) coupled with custom web engineering across Bootstrap 5, Tailwind CSS, Shopify, and WordPress.
           </p>
-          <a href="about.html" class="btn-teal">Know More About Me <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="col-lg-2 border-start border-secondary border-opacity-25 ps-lg-4">
-          <div class="mb-3">
-            <small class="text-secondary d-block">Role</small>
-            <span class="small fw-semibold">SEO Specialist & Frontend Developer</span>
-          </div>
-          <div>
-            <small class="text-secondary d-block">Location</small>
-            <span class="small fw-semibold">India (Open to Remote)</span>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="about-quote-box">
-            <div class="fs-1 text-teal lh-1">“</div>
-            <h5 class="fst-italic fw-bold text-white mb-0">Better Rankings.<br>More Traffic.<br>Real Business Growth.</h5>
-          </div>
+          <p class="text-muted mb-3">
+            I’m also an AI SEO and AEO/LLMO expert. When buyers search on ChatGPT, Gemini, and Google AI Overviews, I guarantee your digital assets are verified entities cited as direct answers.
+          </p>
+          <p class="text-muted mb-4">
+            With hundreds of audited stores and clean frontend builds under my belt, you work directly with me from wireframe to rank 1. No handoffs, no middle managers.
+          </p>
+          <p class="small text-muted mb-0">
+            Running an online store? See my <a href="seo-expertise.html" class="text-brand text-decoration-none fw-semibold">ecommerce SEO strategies</a>, or check my <a href="#frontend-stack" class="text-brand text-decoration-none fw-semibold">frontend development process</a> below.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills & Tools -->
-<section class="py-5 bg-light">
-  <div class="container py-lg-4">
-    <!-- Top Header -->
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-semibold text-uppercase tracking-wide">
-          Skills & Tools
-        </span>
-        <h2 class="fw-bold mt-3 display-6">My Technical Toolkit</h2>
-        <p class="text-muted mt-2">
-          A balanced combination of advanced SEO tools, modern frontend technologies, marketplace optimization, and data-driven marketing strategies to deliver complete digital growth.
+  <!-- ========================================================
+       SECTION 4: SERVICES 8-CARD PASTEL GRID
+       ======================================================== -->
+  <section class="py-5 bg-white border-top" id="services-grid">
+    <div class="container py-2 py-lg-4">
+      <div class="mb-5 text-center text-lg-start">
+        <h2 class="display-6 fw-extrabold text-dark mb-2">SEO, AI search and growth marketing services</h2>
+        <p class="text-muted" style="max-width: 700px;">
+          One accountable expert for the full growth stack, from technical frontend engineering to AI answers, paid media, and conversion optimization.
         </p>
       </div>
-    </div>
 
-    <!-- Skills 2x2 Grid -->
-    <div class="row g-4">
-      <!-- 1. SEO Tools & Skills -->
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-box bg-primary-subtle text-primary rounded-3 p-2 me-3">
-              <i class="bi bi-search fs-4"></i>
+      <div class="row g-4">
+        <!-- 1. Organic SEO -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-blue p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-primary mb-3">
+                <i class="bi bi-search"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Organic SEO</h5>
+              <p class="text-secondary small mb-4">
+                Technical, on-page, content and authority SEO that grows qualified organic traffic on Google.
+              </p>
             </div>
-            <h5 class="fw-bold mb-0">SEO Tools & Strategy</h5>
-          </div>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="skill-item-box"><i class="bi bi-google text-primary"></i> Google Search Console</span>
-            <span class="skill-item-box"><i class="bi bi-bar-chart text-warning"></i> Google Analytics 4</span>
-            <span class="skill-item-box"><i class="bi bi-bug text-success"></i> Screaming Frog</span>
-            <span class="skill-item-box"><i class="bi bi-search text-danger"></i> Ahrefs</span>
-            <span class="skill-item-box"><i class="bi bi-lightning text-warning"></i> SEMrush</span>
-            <span class="skill-item-box"><i class="bi bi-tag text-info"></i> Google Tag Manager</span>
-            <span class="skill-item-box"><i class="bi bi-gear text-secondary"></i> Technical SEO Audit</span>
-            <span class="skill-item-box"><i class="bi bi-code-slash text-success"></i> JSON-LD Schema</span>
-            <span class="skill-item-box"><i class="bi bi-speedometer2 text-primary"></i> Core Web Vitals</span>
-            <span class="skill-item-box"><i class="bi bi-key text-info"></i> Keyword & Gap Analysis</span>
+            <a href="organic-seo.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- 2. Frontend Development -->
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-box bg-danger-subtle text-danger rounded-3 p-2 me-3">
-              <i class="bi bi-code-slash fs-4"></i>
+        <!-- 2. AEO, GEO & LLMO -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-rose p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-danger mb-3">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">AEO, GEO &amp; LLMO</h5>
+              <p class="text-secondary small mb-4">
+                Get cited in Google AI Overviews, ChatGPT, Gemini, Copilot and Perplexity answers.
+              </p>
             </div>
-            <h5 class="fw-bold mb-0">Frontend Development</h5>
-          </div>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="skill-item-box"><i class="bi bi-filetype-html text-danger"></i> HTML5</span>
-            <span class="skill-item-box"><i class="bi bi-filetype-css text-primary"></i> CSS3</span>
-            <span class="skill-item-box"><i class="bi bi-filetype-js text-warning"></i> JavaScript</span>
-            <span class="skill-item-box"><i class="bi bi-code-square text-info"></i> React.js</span>
-            <span class="skill-item-box"><i class="bi bi-bootstrap text-primary"></i> Bootstrap 5</span>
-            <span class="skill-item-box"><i class="bi bi-wind text-info"></i> Tailwind CSS</span>
-            <span class="skill-item-box"><i class="bi bi-git text-danger"></i> Git & GitHub</span>
+            <a href="aeo-geo-llmo.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- 3. E-Commerce & Marketplaces -->
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-box bg-warning-subtle text-warning rounded-3 p-2 me-3">
-              <i class="bi bi-shop fs-4"></i>
+        <!-- 3. Google Ads & PPC -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-yellow p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-warning mb-3">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Google Ads &amp; PPC</h5>
+              <p class="text-secondary small mb-4">
+                Google Ads search, Performance Max and shopping campaigns built for ROAS, not clicks.
+              </p>
             </div>
-            <h5 class="fw-bold mb-0">E-Commerce & Marketplaces</h5>
-          </div>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="skill-item-box"><i class="bi bi-bag-check-fill text-warning"></i> Amazon SEO & Listing</span>
-            <span class="skill-item-box"><i class="bi bi-cart-fill text-primary"></i> Flipkart Optimization</span>
-            <span class="skill-item-box"><i class="bi bi-shop text-danger"></i> Meesho</span>
-            <span class="skill-item-box"><i class="bi bi-tags-fill text-warning"></i> Myntra</span>
-            <span class="skill-item-box"><i class="bi bi-bag-fill text-success"></i> Shopify</span>
-            <span class="skill-item-box"><i class="bi bi-wordpress text-primary"></i> WooCommerce</span>
-            <span class="skill-item-box"><i class="bi bi-check2-circle text-success"></i> Cataloging</span>
+            <a href="google-ads-ppc.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- 4. Performance Marketing & Local SEO -->
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-box bg-success-subtle text-success rounded-3 p-2 me-3">
-              <i class="bi bi-megaphone fs-4"></i>
+        <!-- 4. Meta Ads & Social -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-mint p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-success mb-3">
+                <i class="bi bi-share"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Meta Ads &amp; Social</h5>
+              <p class="text-secondary small mb-4">
+                Facebook and Instagram (Meta) ads plus social profiles that support search and sales.
+              </p>
             </div>
-            <h5 class="fw-bold mb-0">Performance Marketing & Local SEO</h5>
-          </div>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="skill-item-box"><i class="bi bi-megaphone-fill text-primary"></i> Google Ads</span>
-            <span class="skill-item-box"><i class="bi bi-meta text-info"></i> Meta Ads</span>
-            <span class="skill-item-box"><i class="bi bi-facebook text-primary"></i> Facebook Ads</span>
-            <span class="skill-item-box"><i class="bi bi-instagram text-danger"></i> Instagram Ads</span>
-            <span class="skill-item-box"><i class="bi bi-geo-alt-fill text-danger"></i> Google Business Profile</span>
-            <span class="skill-item-box"><i class="bi bi-graph-up-arrow text-success"></i> ROI & Conversion Tracking</span>
+            <a href="meta-ads-social.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SERVICES SECTION -->
-<section class="py-5" style="background-color: #ffffff;">
-  <div class="container py-4">
-    <div class="text-center mb-5">
-      <span class="section-tag">SERVICES</span>
-      <h2 class="fw-bold mt-2">What I Deliver</h2>
-      <p class="text-muted small mx-auto" style="max-width: 600px;">
-        End-to-end digital growth solutions combining organic visibility, technical code, marketplace scale, and targeted acquisition.
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Service 1: Advanced SEO & AI Search -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border p-4 shadow-sm rounded-3">
-          <div class="mb-3">
-            <i class="bi bi-graph-up-arrow fs-2 text-teal"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Technical SEO & GEO/AEO</h5>
-          <p class="text-muted small">
-            End-to-end site audits, crawl budget optimization, JSON-LD schema, and AI search visibility across Google AI Overviews and LLMs.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 2: Frontend Engineering -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border p-4 shadow-sm rounded-3">
-          <div class="mb-3">
-            <i class="bi bi-code-slash fs-2 text-teal"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Frontend Development</h5>
-          <p class="text-muted small">
-            Lightning-fast, mobile-first websites built with Bootstrap 5, modern CSS, and React, fully optimized for Core Web Vitals and speed.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 3: Marketplace Growth -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border p-4 shadow-sm rounded-3">
-          <div class="mb-3">
-            <i class="bi bi-shop fs-2 text-teal"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Marketplace Optimization</h5>
-          <p class="text-muted small">
-            High-ranking product listing, backend search terms, and catalog optimization across Amazon, Flipkart, Meesho, and Myntra.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 4: Paid Performance & Ads -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border p-4 shadow-sm rounded-3">
-          <div class="mb-3">
-            <i class="bi bi-bullseye fs-2 text-teal"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Paid Performance Ads</h5>
-          <p class="text-muted small">
-            ROI-driven Google Ads and Meta campaigns (Facebook & Instagram) engineered for qualified lead generation and lower acquisition costs.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- Featured Projects -->
-  <section class="py-5" style="background-color: #f1f5f9;">
-  <div class="container py-4">
-    <div class="d-flex justify-content-between align-items-end mb-4">
-      <div>
-        <span class="section-tag">FEATURED PROJECTS</span>
-        <h2 class="fw-bold mb-1">My Projects</h2>
-        <p class="text-muted small mb-0">A mix of SEO-optimized websites, e-commerce stores, and custom frontend projects.</p>
-      </div>
-      <a href="projects.html" class="text-dark fw-semibold text-decoration-none">View All Projects <i class="bi bi-arrow-right"></i></a>
-    </div>
-
-    <div class="row g-4">
-      <!-- Project 1: Maxis Solutions -->
-      <div class="col-md-6 col-lg-3">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="images/maxis-solutions.png" alt="Maxis Solutions">
-          </div>
-          <div class="p-3">
-            <h6 class="fw-bold mb-1">Maxis Solutions</h6>
-            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Malaysia</p>
-            <div class="d-flex flex-wrap gap-1 mb-3">
-              <span class="badge bg-light text-secondary border">SEO</span>
-              <span class="badge bg-light text-secondary border">WordPress</span>
-              <span class="badge bg-light text-secondary border">Lead Gen</span>
+        <!-- 5. Email Marketing -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-blue p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-primary mb-3">
+                <i class="bi bi-envelope-paper"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Email Marketing</h5>
+              <p class="text-secondary small mb-4">
+                Lifecycle email, newsletters and automated nurture flows that turn visitors into buyers.
+              </p>
             </div>
-            <a href="https://maxissolutions.com.my/" target="_blank" rel="noopener noreferrer" class="text-teal small fw-semibold text-decoration-none">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="email-marketing.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- Project 2: Royal Luxury Linen -->
-      <div class="col-md-6 col-lg-3">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="images/royal-luxury-linen.png" alt="Royal Luxury Linen">
-          </div>
-          <div class="p-3">
-            <h6 class="fw-bold mb-1">Royal Luxury Linen</h6>
-            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> USA</p>
-            <div class="d-flex flex-wrap gap-1 mb-3">
-              <span class="badge bg-light text-secondary border">E-Commerce</span>
-              <span class="badge bg-light text-secondary border">Shopify</span>
-              <span class="badge bg-light text-secondary border">SEO</span>
+        <!-- 6. AI Marketing Automation -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-rose p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-danger mb-3">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">AI Marketing Automation</h5>
+              <p class="text-secondary small mb-4">
+                AI-powered workflows for reporting, content ops, lead routing and CRM hygiene.
+              </p>
             </div>
-            <a href="https://www.royalluxurylinen.com/" target="_blank" rel="noopener noreferrer" class="text-teal small fw-semibold text-decoration-none">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="ai-marketing-automation.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- Project 3: TIME Fibre Registration -->
-      <div class="col-md-6 col-lg-3">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="images/time-fibre.png" alt="TIME Fibre Registration">
-          </div>
-          <div class="p-3">
-            <h6 class="fw-bold mb-1">TIME Fibre Registration</h6>
-            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Malaysia</p>
-            <div class="d-flex flex-wrap gap-1 mb-3">
-              <span class="badge bg-light text-secondary border">SEO</span>
-              <span class="badge bg-light text-secondary border">WordPress</span>
-              <span class="badge bg-light text-secondary border">Conversion</span>
+        <!-- 7. WordPress & Web Apps -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-yellow p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-warning mb-3">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Frontend &amp; CMS Development</h5>
+              <p class="text-secondary small mb-4">
+                Fast, responsive websites built on Bootstrap 5, Tailwind, Shopify, and custom WordPress.
+              </p>
             </div>
-            <a href="https://timefibreregistration.com/" target="_blank" rel="noopener noreferrer" class="text-teal small fw-semibold text-decoration-none">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="wordpress-web-apps.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <!-- Project 4: JDR Pools -->
-      <div class="col-md-6 col-lg-3">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="images/jdr-pools.png" alt="JDR Pools">
-          </div>
-          <div class="p-3">
-            <h6 class="fw-bold mb-1">JDR Pools</h6>
-            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> USA</p>
-            <div class="d-flex flex-wrap gap-1 mb-3">
-              <span class="badge bg-light text-secondary border">Frontend</span>
-              <span class="badge bg-light text-secondary border">React</span>
-              <span class="badge bg-light text-secondary border">Local SEO</span>
+        <!-- 8. Conversion Optimization -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-pastel-card service-pastel-mint p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="service-icon-bubble bg-white text-success mb-3">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-2">Conversion Optimization</h5>
+              <p class="text-secondary small mb-4">
+                Landing page, UX and funnel improvements that convert more of the traffic you already have.
+              </p>
             </div>
-            <a href="https://www.jdrpools.com/" target="_blank" rel="noopener noreferrer" class="text-teal small fw-semibold text-decoration-none">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="conversion-optimization.html" class="service-card-link text-primary fw-bold text-decoration-none small">Learn more &rarr;</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Case Studies Section (Dark) -->
- <section class="case-studies-section">
-  <div class="container">
-    <div class="row align-items-center mb-5">
-      <div class="col-lg-6">
-        <span class="section-tag">SEO CASE STUDIES</span>
-        <h2 class="fw-bold">Real Strategies. Measurable Results.</h2>
-        <p class="text-secondary small mb-0">From technical audits to content optimization, I help websites achieve higher rankings and better engagement.</p>
+  <!-- ========================================================
+       SECTION 5: PROCESS - HOW I WORK
+       ======================================================== -->
+  <section class="py-5 bg-white border-top" id="process-section">
+    <div class="container py-2 py-lg-4">
+      <div class="mb-4">
+        <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">PROCESS</span>
+        <h2 class="display-5 fw-extrabold text-dark">How I work</h2>
       </div>
-      <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
-        <a href="case-studies.html" class="btn-teal">View All Case Studies <i class="bi bi-arrow-right"></i></a>
-      </div>
-    </div>
 
-    <div class="row g-4">
-      <!-- Metric Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="stat-metric-card">
-          <i class="bi bi-bar-chart-line text-teal fs-3"></i>
-          <div class="stat-metric-val">+185%</div>
-          <h6 class="fw-bold mb-1">Organic Traffic Growth</h6>
-          <small class="text-secondary">Site Audit & Core Optimizations</small>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="process-card p-4 rounded-4 border bg-white h-100">
+            <span class="process-badge badge-blue mb-3">01</span>
+            <h4 class="fw-bold text-dark mb-3">Audit &amp; Architecture</h4>
+            <p class="text-muted small mb-0 lh-base">
+              A comprehensive technical, content and code review of your site, checking DOM structure, Core Web Vitals, and AI visibility.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Metric Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="stat-metric-card">
-          <i class="bi bi-search text-teal fs-3"></i>
-          <div class="stat-metric-val">+220%</div>
-          <h6 class="fw-bold mb-1">Search Impressions</h6>
-          <small class="text-secondary">Keyword Strategy & Intent Mapping</small>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="process-card p-4 rounded-4 border bg-white h-100">
+            <span class="process-badge badge-rose mb-3">02</span>
+            <h4 class="fw-bold text-dark mb-3">Strategy &amp; Prototype</h4>
+            <p class="text-muted small mb-0 lh-base">
+              A prioritized 90-day roadmap with targeted KRAs, technical fixes, and component wireframes agreed upon up front.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Metric Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="stat-metric-card">
-          <i class="bi bi-gear-wide-connected text-teal fs-3"></i>
-          <div class="stat-metric-val">-42%</div>
-          <h6 class="fw-bold mb-1">Crawl Errors Reduced</h6>
-          <small class="text-secondary">Technical Fixes & Architecture Audit</small>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="process-card p-4 rounded-4 border bg-white h-100">
+            <span class="process-badge badge-yellow mb-3">03</span>
+            <h4 class="fw-bold text-dark mb-3">Execution &amp; Code</h4>
+            <p class="text-muted small mb-0 lh-base">
+              Direct implementation: custom Liquid/HTML code, schema injection, content optimization, and UI performance refinements.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Metric Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="stat-metric-card">
-          <i class="bi bi-speedometer text-teal fs-3"></i>
-          <div class="stat-metric-val">+60%</div>
-          <h6 class="fw-bold mb-1">Page Speed & Performance</h6>
-          <small class="text-secondary">Core Web Vitals Optimization</small>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="process-card p-4 rounded-4 border bg-white h-100">
+            <span class="process-badge badge-green mb-3">04</span>
+            <h4 class="fw-bold text-dark mb-3">Reporting &amp; Scale</h4>
+            <p class="text-muted small mb-0 lh-base">
+              A monthly report and a shared dashboard: what moved, why it moved, and continuous iterative development for scale.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Image Portfolio Strip -->
+  <!-- ========================================================
+       SECTION 6: READY TO GROW CALL TO ACTION BANNER
+       ======================================================== -->
   <section class="py-5 bg-white">
-    <div class="container py-4">
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <div>
-          <span class="section-tag">IMAGE PORTFOLIO</span>
-          <h2 class="fw-bold mb-1">Image Portfolio</h2>
-          <p class="text-muted small mb-0">High-quality visuals, product images, banners and creative designs.</p>
-        </div>
-        <a href="image-portfolio.html" class="btn-teal">View Full Portfolio <i class="bi bi-arrow-right"></i></a>
-      </div>
-
-      <div class="row g-3">
-        <div class="col-6 col-md-3">
-          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-3 w-100 shadow-sm" alt="Perfume Product Mockup">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-3 w-100 shadow-sm" alt="Product Photography">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-3 w-100 shadow-sm" alt="App UI Mockup">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-3 w-100 shadow-sm" alt="Cosmetics Branding">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- My Workflow -->
-  <section class="py-5" style="background-color: #f8fafc;">
-    <div class="container py-4">
-      <span class="section-tag">MY WORKFLOW</span>
-      <h2 class="fw-bold mb-1">My Workflow</h2>
-      <p class="text-muted small mb-5">A simple and effective process to deliver quality results, on time.</p>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="workflow-step-card">
-            <span class="badge bg-teal text-dark rounded-circle p-2 mb-3">01</span>
-            <h6 class="fw-bold">Plan & Analyze</h6>
-            <p class="text-muted small mb-0">Understand goals and search keywords.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="workflow-step-card">
-            <span class="badge bg-teal text-dark rounded-circle p-2 mb-3">02</span>
-            <h6 class="fw-bold">Strategize</h6>
-            <p class="text-muted small mb-0">Build plan & select right approach.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="workflow-step-card">
-            <span class="badge bg-teal text-dark rounded-circle p-2 mb-3">03</span>
-            <h6 class="fw-bold">Implement</h6>
-            <p class="text-muted small mb-0">Optimize, develop & create content.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="workflow-step-card">
-            <span class="badge bg-teal text-dark rounded-circle p-2 mb-3">04</span>
-            <h6 class="fw-bold">Monitor & Improve</h6>
-            <p class="text-muted small mb-0">Track performance & make data-driven changes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section (Dark) -->
-  <section class="testimonial-section">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <div>
-          <span class="section-tag">TESTIMONIALS</span>
-          <h2 class="fw-bold mb-1">What Clients Say</h2>
-          <p class="text-secondary small mb-0">Trusted by businesses, brands and individuals who value quality.</p>
+      <div class="curved-banner-container position-relative overflow-hidden p-4 p-md-5 text-center text-white rounded-5 shadow-lg">
+        <div class="banner-circle-yellow"></div>
+        <div class="banner-circle-green"></div>
+
+        <div class="position-relative" style="z-index: 2;">
+          <h2 class="display-5 fw-extrabold mb-3">Ready to build fast websites and scale organic traffic?</h2>
+          <p class="mx-auto mb-4 text-white-50" style="max-width: 620px; font-size: 1.05rem;">
+            Tell me about your project, platform, and marketing goals. You will get a clear, honest development and SEO plan within 48 working hours.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+            <a href="#strategyCallModal" class="btn btn-white-pill fw-bold" data-bs-toggle="modal">
+              Book a free consultation
+            </a>
+            <a href="mailto:contact@example.com" class="btn btn-banner-outline fw-semibold">
+              Email me@example.com
+            </a>
+          </div>
         </div>
-        <a href="#contact" class="btn-teal">View More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 7: REAL CASE STUDIES
+       ======================================================== -->
+  <section class="py-5 bg-white border-top" id="case-studies-section">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">REAL RESULTS</span>
+        <h2 class="display-5 fw-extrabold text-dark">Read Real Case Studies</h2>
       </div>
 
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p class="text-light small fst-italic mb-4">"Excellent work! The website is fast, responsive and SEO is already bringing good traffic."</p>
-            <div class="d-flex align-items-center justify-content-between">
-              <div>
-                <h6 class="fw-bold text-white mb-0">Rohit Sharma</h6>
-                <small class="text-secondary">Business Owner</small>
+      <div class="row g-4 justify-content-center">
+        <!-- Case Study Card 1 -->
+        <div class="col-12 col-lg-6">
+          <div class="case-study-hero-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="case-card-header p-4 position-relative d-flex flex-column justify-content-between" style="background: linear-gradient(135deg, #fbf7ee 0%, #f0f4ff 100%); min-height: 250px;">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <h3 class="fw-extrabold text-dark mb-3 lh-sm" style="font-size: 1.85rem;">The 16-Month Shopify Jewelry SEO Rebuild</h3>
+                  <span class="badge bg-white text-dark border px-3 py-2 rounded-pill small fw-semibold shadow-2xs">Shopify &bull; Luxury Jewelry</span>
+                </div>
+                <div class="col-5 text-end">
+                  <div class="mock-dash-preview shadow-sm rounded-3 p-2 bg-white d-inline-block border">
+                    <div class="d-flex gap-1 mb-1">
+                      <span class="badge bg-light text-primary border" style="font-size:0.6rem;">4.3%</span>
+                      <span class="badge bg-light text-success border" style="font-size:0.6rem;">$175K</span>
+                    </div>
+                    <div class="bg-primary text-white rounded-2 p-2 text-start" style="font-size:0.65rem;">
+                      <i class="bi bi-gem"></i> Shopify Growth
+                      <div class="fw-bold mt-1">+248% Organic</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <div class="text-end mt-3">
+                <span class="small text-muted fw-semibold">Book a consultation <i class="bi bi-arrow-right-circle-fill text-brand"></i></span>
+              </div>
+            </div>
+
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-3">Jewelry SEO: How I Grew a Luxury Shopify Store to $175K/Month in Organic Revenue</h5>
+                <p class="text-muted small mb-4">
+                  A 16-month, first-person walkthrough of how I rebuilt a lab-grown jewelry Shopify store from an invisible catalog into a self-sustaining organic channel: the collection architecture, the CRO calls, and custom Liquid template performance.
+                </p>
+              </div>
+              <div>
+                <a href="case-studies.html" class="text-brand fw-bold text-decoration-none small">Read full case study &rarr;</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p class="text-light small fst-italic mb-4">"Very professional and easy to work with. Delivered the project on time with great communication."</p>
-            <div class="d-flex align-items-center justify-content-between">
-              <div>
-                <h6 class="fw-bold text-white mb-0">Neha Verma</h6>
-                <small class="text-secondary">Marketing Manager</small>
+
+        <!-- Case Study Card 2 -->
+        <div class="col-12 col-lg-6">
+          <div class="case-study-hero-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="case-card-header p-4 position-relative d-flex flex-column justify-content-between" style="background: linear-gradient(135deg, #f7f9fc 0%, #edf2ff 100%); min-height: 250px;">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <h3 class="fw-extrabold text-dark mb-3 lh-sm" style="font-size: 1.85rem;">16 Pages One Platform Full Shopify SEO</h3>
+                  <span class="badge bg-white text-dark border px-3 py-2 rounded-pill small fw-semibold shadow-2xs">Alt Wine &amp; Non-Alcoholic Beverage</span>
+                </div>
+                <div class="col-5 text-end">
+                  <div class="mock-dash-preview shadow-sm rounded-3 p-2 bg-white d-inline-block border">
+                    <div class="d-flex gap-1 mb-1">
+                      <span class="badge bg-light text-primary border" style="font-size:0.6rem;">H1</span>
+                      <span class="badge bg-light text-info border" style="font-size:0.6rem;">100% indexed</span>
+                    </div>
+                    <div class="bg-primary text-white rounded-2 p-2 text-start" style="font-size:0.65rem;">
+                      <i class="bi bi-list-check"></i> 16 Pages Clean
+                      <div class="fw-bold mt-1">Zero Tech Debt</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <div class="text-end mt-3">
+                <span class="small text-muted fw-semibold">Book a consultation <i class="bi bi-arrow-right-circle-fill text-brand"></i></span>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p class="text-light small fst-italic mb-4">"The understanding of requirements was perfect and provided clean code with great SEO practices."</p>
-            <div class="d-flex align-items-center justify-content-between">
+
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
               <div>
-                <h6 class="fw-bold text-white mb-0">Amit Patel</h6>
-                <small class="text-secondary">Co-Founder</small>
+                <h5 class="fw-bold text-dark mb-3">Shopify Collection Page SEO: 16 Pages Optimized for a New Alt Wine Brand</h5>
+                <p class="text-muted small mb-4">
+                  A new alt wine brand on Shopify had the right products but zero SEO infrastructure. No title tags, poor DOM structure, and duplicate FAQs. Here’s exactly how I re-engineered all 16 collection pages with modular frontend code.
+                </p>
               </div>
-              <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <div>
+                <a href="case-studies.html" class="text-brand fw-bold text-decoration-none small">Read full case study &rarr;</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- FAQ SECTION -->
-<section class="py-5" style="background-color: #f8fafc;">
-  <div class="container py-4">
-    <div class="text-center mb-5">
-      <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
-      <h2 class="fw-bold mt-2">Common Questions & Answers</h2>
-      <p class="text-muted small mx-auto" style="max-width: 550px;">
-        Everything you need to know about my workflow, delivery, and dual expertise in SEO and development.
-      </p>
-    </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="accordion" id="portfolioFaqAccordion">
-          
-          <!-- FAQ 1 -->
-          <div class="accordion-item border mb-3 rounded-2 shadow-sm overflow-hidden">
-            <h2 class="accordion-header" id="faqHeadingOne">
-              <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne">
-                How does your frontend background improve SEO outcomes?
-              </button>
-            </h2>
-            <div id="faqCollapseOne" class="accordion-collapse collapse" data-bs-parent="#portfolioFaqAccordion">
-              <div class="accordion-body text-muted small">
-                Most SEOs only audit issues without coding ability. Because I develop using modern CSS, HTML5, and Bootstrap, I diagnose and directly fix Core Web Vitals, DOM bloat, schema markup graphs, and JavaScript rendering bottlenecks without waiting on third-party developers.
+  <!-- ========================================================
+       SECTION 8: RECENT SEO & DEV POSTS
+       ======================================================== -->
+  <section class="py-5 bg-light-subtle border-top">
+    <div class="container py-2 py-lg-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-light-brand text-brand fw-bold px-3 py-1 rounded-pill mb-2">FROM THE BLOG</span>
+        <h2 class="display-5 fw-extrabold text-dark mb-2">Recent technical &amp; SEO posts</h2>
+        <p class="text-muted small mx-auto" style="max-width: 600px;">
+          Practical breakdowns covering technical SEO, AI discovery, frontend speed, and e-commerce development.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center mb-5">
+        <!-- Post 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="post-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="post-card-preview p-3 position-relative" style="background: linear-gradient(135deg, #fbf7ee 0%, #edf2ff 100%); min-height: 155px;">
+              <h5 class="fw-extrabold text-dark pe-5 mb-0" style="font-size: 1.15rem; line-height: 1.3;">Ecommerce AI Search Visibility A Step-by-Step Guide</h5>
+              <div class="position-absolute bottom-0 end-0 p-2 text-muted" style="font-size: 0.65rem;">
+                Book a consultation <i class="bi bi-arrow-right-circle-fill text-brand"></i>
+              </div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.72rem; letter-spacing: 0.5px;">AI SEO</span>
+                <h6 class="fw-bold text-dark mb-2">Ecommerce AI Search Visibility: 9 Steps to Get Recommended</h6>
+                <p class="text-muted small mb-4">
+                  Get your store named in ChatGPT, Google AI Mode and Perplexity answers. Nine steps, real 2026 data, and the AI visibility myths to skip.
+                </p>
+              </div>
+              <div>
+                <a href="blog.html" class="text-brand fw-bold text-decoration-none small">Read more &rarr;</a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- FAQ 2 -->
-          <div class="accordion-item border mb-3 rounded-2 shadow-sm overflow-hidden">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-              <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
-                How do you optimize for AI search engines like Perplexity & ChatGPT (GEO/AEO)?
-              </button>
-            </h2>
-            <div id="faqCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#portfolioFaqAccordion">
-              <div class="accordion-body text-muted small">
-                I optimize for Generative Engine Optimization (GEO) and Answer Engines (AEO) by structuring content around entities, utilizing authoritative JSON-LD schema, answering search intent concisely, and establishing strong topical authority so LLMs cite your brand as the primary source.
+        <!-- Post 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="post-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="post-card-preview p-3 position-relative" style="background: linear-gradient(135deg, #f7f9fc 0%, #eef2ff 100%); min-height: 155px;">
+              <h5 class="fw-extrabold text-dark pe-5 mb-0" style="font-size: 1.15rem; line-height: 1.3;">Shopify Technical SEO &amp; Liquid Optimization Audit</h5>
+              <div class="position-absolute bottom-0 end-0 p-2 text-muted" style="font-size: 0.65rem;">
+                Book a consultation <i class="bi bi-arrow-right-circle-fill text-brand"></i>
+              </div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.72rem; letter-spacing: 0.5px;">TECHNICAL SEO &amp; DEV</span>
+                <h6 class="fw-bold text-dark mb-2">Shopify Technical SEO Audit: A Step by Step Guide</h6>
+                <p class="text-muted small mb-4">
+                  Run a Shopify technical SEO audit in ten steps. Real Liquid paths, exact thresholds, and the Shopify specific problems generic checklists miss.
+                </p>
+              </div>
+              <div>
+                <a href="blog.html" class="text-brand fw-bold text-decoration-none small">Read more &rarr;</a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- FAQ 3 -->
-          <div class="accordion-item border mb-3 rounded-2 shadow-sm overflow-hidden">
-            <h2 class="accordion-header" id="faqHeadingThree">
-              <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree">
-                Do you handle e-commerce marketplace optimization alongside website SEO?
-              </button>
-            </h2>
-            <div id="faqCollapseThree" class="accordion-collapse collapse" data-bs-parent="#portfolioFaqAccordion">
-              <div class="accordion-body text-muted small">
-                Yes. I optimize end-to-end product listings, search terms, and catalog architecture across major marketplaces including Amazon, Flipkart, Meesho, and Myntra, as well as standalone stores on Shopify and WooCommerce.
+        <!-- Post 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="post-card rounded-4 border bg-white h-100 overflow-hidden shadow-sm d-flex flex-column">
+            <div class="post-card-preview p-3 position-relative" style="background: linear-gradient(135deg, #fcf8ee 0%, #edf4ff 100%); min-height: 155px;">
+              <h5 class="fw-extrabold text-dark pe-5 mb-0" style="font-size: 1.15rem; line-height: 1.3;">Ecommerce Link Building Links to Product Pages, Not Just the Blog</h5>
+              <div class="position-absolute bottom-0 end-0 p-2 text-muted" style="font-size: 0.65rem;">
+                Book a consultation <i class="bi bi-arrow-right-circle-fill text-brand"></i>
+              </div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.72rem; letter-spacing: 0.5px;">LINK BUILDING</span>
+                <h6 class="fw-bold text-dark mb-2">Ecommerce Link Building: How to Earn Links to Product Pages</h6>
+                <p class="text-muted small mb-4">
+                  Product pages rarely earn links on their own. Learn how to get links to product pages through roundups, stockist pages, reclaimed mentions and internal links.
+                </p>
+              </div>
+              <div>
+                <a href="blog.html" class="text-brand fw-bold text-decoration-none small">Read more &rarr;</a>
               </div>
             </div>
           </div>
-
-          <!-- FAQ 4 -->
-          <div class="accordion-item border mb-3 rounded-2 shadow-sm overflow-hidden">
-            <h2 class="accordion-header" id="faqHeadingFour">
-              <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour">
-                Are you available for freelance projects or full-time remote roles?
-              </button>
-            </h2>
-            <div id="faqCollapseFour" class="accordion-collapse collapse" data-bs-parent="#portfolioFaqAccordion">
-              <div class="accordion-body text-muted small">
-                Yes, I am actively available for remote full-time positions, long-term contracts, and high-impact consulting projects globally.
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
+
+      <div class="text-center">
+        <a href="blog.html" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold small">Read all blogs &rarr;</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Contact & Footer Strip -->
-  <footer class="contact-section" id="contact">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-3">
-          <span class="section-tag">GET IN TOUCH</span>
-          <h4 class="fw-bold mb-3">Let's Work Together</h4>
-          <p class="text-muted small mb-4">Have a project in mind or want to discuss SEO and web development? I'd love to hear from you.</p>
-          <div class="d-flex flex-column gap-2 small text-muted">
-            <div><i class="bi bi-envelope text-teal me-2"></i> contact@example.com</div>
-            <div><i class="bi bi-telephone text-teal me-2"></i> +91 98765 43210</div>
-            <div><i class="bi bi-geo-alt text-teal me-2"></i> Lucknow, Uttar Pradesh, India</div>
+  <!-- ========================================================
+       SECTION 9: DARK MEGA FOOTER
+       ======================================================== -->
+  <footer class="footer-dark py-5 text-white" style="background-color: #171717;">
+    <div class="container py-3">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-inline-flex align-items-center gap-2 bg-white text-dark px-3 py-2 rounded-3 fw-bold mb-3 shadow-sm">
+            <span class="text-primary fw-extrabold" style="font-size: 1.1rem;">Mohammad Mustafa</span>
+            <span class="d-inline-flex gap-1">
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+              <span class="bg-primary rounded-1" style="width: 3px; height: 16px;"></span>
+            </span>
           </div>
+          <p class="text-secondary small mb-4 fw-semibold">
+            SEO Specialist &amp; Frontend Web Developer with 11+ Years of Industry Experience
+          </p>
+          <a href="#strategyCallModal" data-bs-toggle="modal" class="btn btn-outline-secondary text-white rounded-pill px-3 py-2 small fw-semibold">
+            Book a Strategy Call &rarr;
+          </a>
         </div>
 
-        <div class="col-lg-4">
-          <form id="contactForm" class="d-flex flex-column gap-3">
-            <div class="row g-2">
-              <div class="col-6">
-                <input type="text" class="form-control form-control-sm" placeholder="Your Name" required>
-              </div>
-              <div class="col-6">
-                <input type="email" class="form-control form-control-sm" placeholder="Your Email" required>
-              </div>
-            </div>
-            <textarea class="form-control form-control-sm" rows="3" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn-teal align-self-start">Send Message <i class="bi bi-arrow-right"></i></button>
-          </form>
-        </div>
-
-        <div class="col-lg-2">
-          <h6 class="fw-bold mb-3">Quick Links</h6>
-          <ul class="list-unstyled small d-flex flex-column gap-2">
-            <li><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-            <li><a href="about.html" class="text-decoration-none text-muted">About</a></li>
-            <li><a href="case-studies.html" class="text-decoration-none text-muted">Case Studies</a></li>
-            <li><a href="image-portfolio.html" class="text-decoration-none text-muted">Image Portfolio</a></li>
-            <li><a href="contact.html" class="text-decoration-none text-muted">Contact</a></li>
+        <!-- Col 2: SEO Resources -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">SEO &amp; AI CAPABILITIES</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="organic-seo.html" class="footer-link">Organic &amp; Technical SEO</a></li>
+            <li><a href="aeo-geo-llmo.html" class="footer-link">AEO, GEO &amp; LLMO Optimization</a></li>
+            <li><a href="blog.html" class="footer-link">Shopify Technical SEO Audit</a></li>
+            <li><a href="seo-expertise.html" class="footer-link">Core Web Vitals &amp; PageSpeed</a></li>
+            <li><a href="seo-expertise.html" class="footer-link">Schema &amp; JSON-LD Graphs</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3">
-          <h6 class="fw-bold mb-3">Subscribe to Newsletter</h6>
-          <p class="text-muted small">Get SEO tips, frontend updates and latest insights.</p>
-          <form id="newsletterForm" class="d-flex flex-column gap-2">
-            <input type="email" class="form-control form-control-sm" placeholder="Your Email" required>
-            <button type="submit" class="btn-teal w-100 justify-content-center">Subscribe</button>
-          </form>
+        <!-- Col 3: Frontend Development -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">FRONTEND SERVICES</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="#frontend-stack" class="footer-link">Bootstrap 5 &amp; Tailwind CSS</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Shopify Liquid &amp; Theme Builds</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Custom WordPress &amp; WooCommerce</a></li>
+            <li><a href="#frontend-stack" class="footer-link">JavaScript (ES6+) &amp; React.js</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Mobile-First UI &amp; Performance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Links -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="text-uppercase fw-bold text-white small mb-3 tracking-wider">QUICK NAVIGATION</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Insights</a></li>
+            <li><a href="#frontend-stack" class="footer-link">Frontend Tech Stack</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-4 mt-5 border-top border-secondary border-opacity-25 d-flex flex-column flex-md-row justify-content-between align-items-center small text-secondary">
+        <div>&copy; 2026 Mohammad Mustafa. All rights reserved.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="footer-bar">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <div class="d-flex align-items-center gap-2">
-        <div class="brand-logo" style="width: 26px; height: 26px; font-size: 0.8rem;">M</div>
-        <span>Mohammad Mustafa - © 2026 Mohammad Mustafa. All rights reserved.</span>
-      </div>
-      <div class="d-flex gap-3">
-        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a>
-        <a href="#" class="text-muted text-decoration-none">Terms & Conditions</a>
+  <!-- Modal: Book Strategy Call -->
+  <div class="modal fade" id="strategyCallModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 p-3">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalLabel">Book a Consultation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small">Let's discuss how we can improve your website architecture, rankings, and conversions.</p>
+          <form class="d-flex flex-column gap-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Work Email" required>
+            <input type="url" class="form-control" placeholder="Website URL (e.g. yourstore.com)">
+            <textarea class="form-control" rows="3" placeholder="What are your goals (SEO, Redesign, Speed, Shopify/WP)?"></textarea>
+            <button type="submit" class="btn-brand w-100">Confirm Booking &rarr;</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
